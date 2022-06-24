@@ -1,23 +1,28 @@
 include irvine32.inc
 .data
-
-star byte "*",0
-cols dword 5
-
-.code 
+cols dword 1
+msg byte "A",0
+.code
 main proc
 mov ecx,5
+
 outer:
+
 mov ebx,ecx
 mov ecx,cols
 inner:
-mov al,star
+mov al,msg
 call writechar
+mov al," "
+call writechar
+inc msg
 loop inner
 call crlf
-dec cols
+inc cols
 mov ecx,ebx
 loop outer
-exit 
+
+exit
+
 main endp
 end main
