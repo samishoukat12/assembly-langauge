@@ -1,6 +1,6 @@
  include irvine32.inc
 .data
-msg1 byte '                                                  Welcome to Abox Travels',0                       
+msg1 byte '                                                  Welcome to Tesla Travels',0                       
 msg3 byte '                             Press Enter to know about our weekly bus schedule : ',0                                   
 msg6 byte '                                       Do you want to continue?',0
 msg7 byte '                                               1.Yes',0
